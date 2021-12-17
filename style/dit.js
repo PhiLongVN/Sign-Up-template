@@ -54,14 +54,6 @@ form.addEventListener("submit", (e) => {
   removeError(last);
 });
 
-// handleSubmit = (dem) => {
-//   if (dem > 0) {
-//     form.onsubmit = (e) => {
-//       e.submit();
-//     };
-//   }
-// };
-
 removeError = (field) => {
   field.onclick = () => {
     field.parentNode.classList.remove("active");

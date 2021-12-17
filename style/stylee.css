@@ -159,14 +159,19 @@ body {
   border: solid 2px rgba(250, 6, 6, 0.973);
 }
 
-.form2 img{
+.form2.active input::placeholder {
+  color: red;
+  text-transform: uppercase;
+}
+
+.form2 img {
   position: absolute;
-  top:calc(50% - 3px);
+  top: calc(50% - 3px);
   transform: translateY(-50%);
   right: 15px;
   opacity: 0;
 }
-.form2.active img{
+.form2.active img {
   opacity: 1;
 }
 
@@ -182,9 +187,9 @@ body {
   transform: translateY(0px);
 }
 
-.butn::-ms-value{
+/* .butn::-ms-value{
   text-align: center;
-}
+} */
 
 .butn:hover {
   background: hsl(154, 93%, 48%);
